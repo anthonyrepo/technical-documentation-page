@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+}
+
+/*User Story #2*/
+.main-section {
+
+}
+
+/*User Story #10*/
+.nav-link {
+
+}
+
+/*User Story #1*/
+#main-doc {
+ display: flex;
+}
+
+/*User Story #4*/
+#Section_1{
+
+}
+#Section_2{
+
+}
+#Section_3{
+
+}
+#Section_4{
+
+}
+#Section_5{
+
+}
+#title {
+    flex: 100%;
+}
+
+/*User Story #8*/
+#nav-bar{
+    flex: 20%;
+}
+#content{
+    flex: 80%;
+}
+
+/*User Story #15*/
+@media only screen and(max-width: 815px){
+
+}
