@@ -1,30 +1,87 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    margin: 0px;
+}
+section {
+    padding: 10px;
+}
+header{
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 2.37rem;
+    line-height: 3.83rem;
+}
 h1 {
     text-align: center;
+    font-weight: 900;
+    font-size: 2.64rem;
+    line-height: 4.23rem;
+    font-family: sans-serif;
+    margin: 0;
+}
+h2 {
+    font-weight: 900;
+    font-size: 2.07rem;
+    line-height: 3.43rem;
+    font-family: sans-serif;
+}
+h3 {
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 2.63;
+}
+p{
+    margin: 0 0 10px;
+    font-size: 1rem;
+    line-height: 1.93rem;
+    font-family: sans-serif;
 }
 pre {
-    box-sizing: border-box;
-    display: block;
     padding: 9.5px;
     margin: 0 0 10px;
-    font-size: 13px;
-    line-height: 1.428571434;
+    line-height: 1.42857143;
     color: #333;
-    word-break: break-all;
-    word-wrap: break-word;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
+    background-color: #F5F5F5;
+    border: 1px solid #CCC;
     border-radius: 4px;
-    overflow: auto;
-    white-space: pre-wrap;
+    font-family: Menlo, Monaco, Consolas;
 }
 code {
     padding: 0;
-    white-space: pre-wrap;
-    border-radius: 0;
-    box-sizing: border-box;
+    font-family: Menlo, Monaco, Consolas;
+}
+p code, li code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    border-radius: 4px;
+    font-family: Menlo, Monaco, Consolas;
+    background-color: #f9f2f4;
+}
+ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.93rem;
+}
+li {
+    font-family: sans-serif;
+    line-height: 1.93rem;
+}
+a{
+    color: #0D47A1;
+    text-decoration: none;
+}
+dt {
+    font-weight: 700;
     line-height: 1.42857143;
-    word-break: break-all;
-    word-wrap: break-word;
+    font-family: sans-serif;
+}
+dd {
+    margin-left: 0;
+    line-height: 1.42857143;
+    font-family: sans-serif;
 }
 
 /*User Story #2*/
@@ -51,10 +108,32 @@ code {
     width: 100%;
     height: 100%;
 }
+.wrapper {
+    display: flex;
+    height: 100%;
+    /* overflow: hidden; */
+}
+.outer {
+    overflow-y: auto;
+}
+.sublist {
+    list-style-type: disc !important;
+    margin-left: 30px;
+}
 
 /*User Story #1*/
 #main-doc {
- display: flex;
+    /* display: flex; */
+    /* flex-direction: row; */
+    overflow: hidden;
+    height: 100vh;
+    /* box-sizing: border-box; */
+}
+
+#title {
+    background-color: #0D47A1;
+    color: white;
+    /* margin: 0px; */
 }
 
 /*User Story #4*/
@@ -79,10 +158,23 @@ code {
 
 /*User Story #8*/
 #nav-bar{
-    flex: 20%;
+    flex: 1 0 25%;
+    overflow-y: auto;
+}
+#nav-bar ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+#nav-bar header {
+    font-size: 1.75rem;
 }
 #content{
-    flex: 80%;
+    flex: 75%;
+    border-left: solid;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /*User Story #15*/
