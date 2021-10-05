@@ -1,15 +1,10 @@
 body {
-    padding: 0;
-    margin: 0;
     overflow: hidden;
     margin: 0px;
-}
-section {
-    padding: 10px;
+    font-family: sans-serif;
 }
 header{
     font-weight: 900;
-    font-family: sans-serif;
     font-size: 2.37rem;
     line-height: 3.83rem;
 }
@@ -18,14 +13,12 @@ h1 {
     font-weight: 900;
     font-size: 2.64rem;
     line-height: 4.23rem;
-    font-family: sans-serif;
     margin: 0;
 }
 h2 {
     font-weight: 900;
     font-size: 2.07rem;
     line-height: 3.43rem;
-    font-family: sans-serif;
 }
 h3 {
     font-weight: 900;
@@ -36,7 +29,6 @@ p{
     margin: 0 0 10px;
     font-size: 1rem;
     line-height: 1.93rem;
-    font-family: sans-serif;
 }
 pre {
     padding: 9.5px;
@@ -46,7 +38,6 @@ pre {
     background-color: #F5F5F5;
     border: 1px solid #CCC;
     border-radius: 4px;
-    font-family: Menlo, Monaco, Consolas;
 }
 code {
     padding: 0;
@@ -57,7 +48,6 @@ p code, li code {
     font-size: 90%;
     color: #c7254e;
     border-radius: 4px;
-    font-family: Menlo, Monaco, Consolas;
     background-color: #f9f2f4;
 }
 ol {
@@ -68,6 +58,7 @@ ol {
 li {
     font-family: sans-serif;
     line-height: 1.93rem;
+    margin-bottom: 10px;
 }
 a{
     color: #0D47A1;
@@ -86,12 +77,7 @@ dd {
 
 /*User Story #2*/
 .main-section {
-
-}
-
-/*User Story #10*/
-.nav-link {
-
+    padding-left: 20px;
 }
 .video-wrapper {
     position: relative;
@@ -111,7 +97,6 @@ dd {
 .wrapper {
     display: flex;
     height: 100%;
-    /* overflow: hidden; */
 }
 .outer {
     overflow-y: auto;
@@ -123,42 +108,17 @@ dd {
 
 /*User Story #1*/
 #main-doc {
-    /* display: flex; */
-    /* flex-direction: row; */
     overflow: hidden;
     height: 100vh;
-    /* box-sizing: border-box; */
 }
-
 #title {
     background-color: #0D47A1;
     color: white;
-    /* margin: 0px; */
-}
-
-/*User Story #4*/
-#Introduction {
-
-}
-#Section_2 {
-
-}
-#Section_3 {
-
-}
-#Section_4 {
-
-}
-#Section_5 {
-
-}
-#title {
-    flex: 100%;
 }
 
 /*User Story #8*/
 #nav-bar{
-    flex: 1 0 25%;
+    flex: 1 0 15%;
     overflow-y: auto;
 }
 #nav-bar ul {
@@ -168,13 +128,6 @@ dd {
 }
 #nav-bar header {
     font-size: 1.75rem;
-}
-#content{
-    flex: 75%;
-    border-left: solid;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 /*User Story #15*/
