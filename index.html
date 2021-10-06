@@ -8,7 +8,7 @@
         <main id="main-doc">
             <div class="wrapper">
                 <nav id="nav-bar">
-                    <header>Lesson: 3</header>   
+                    <header>Lesson 3</header>   
                     <ul>
                         <li><a class="nav-link" href="#Introduction">Introduction</a></li>
                         <li><a class="nav-link" href="#Variables,_expressions,_and_statements">Variables, expressions, and statements</a></li>
@@ -266,7 +266,7 @@
                         <pre><code>>>> inp = input()<br>Some silly stuff<br>>>> print(inp)<br>Some silly stuff</code></pre>
                         <p>Before getting input from the user, it is a good idea to print a prompt telling the user what to input. You can pass a string to <code>input</code> to be displayed to the user before pausing for input:</p>
                         <pre><code>>>> name = input('What is your name?\n')<br>What is your name?<br>Chuck<br>>>> print(name)<br>Chuck</code></pre>
-                        The sequence <code>\n</code> at the end of the prompt represents a <em>newline</em>, which is a special character that causes a line break. That’s why the user’s input appears below the prompt.
+                        <p>The sequence <code>\n</code> at the end of the prompt represents a <em>newline</em>, which is a special character that causes a line break. That’s why the user’s input appears below the prompt.</p>
                         <p>If you expect the user to type an integer, you can try to convert the return value to <code>int</code> using the <code>int()</code> function:</p>
                         <pre><code>>>> prompt = 'What...is the airspeed velocity of an unladen swallow?\n'<br>>>> speed = input(prompt)<br>What...is the airspeed velocity of an unladen swallow?<br>17<br>>>> int(speed)<br>17<br>>>> int(speed) + 5<br>22</code></pre>
                         <p>But if the user types something other than a string of digits, you get an error:</p>

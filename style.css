@@ -1,8 +1,3 @@
-body {
-    overflow: hidden;
-    margin: 0px;
-    font-family: sans-serif;
-}
 header{
     font-weight: 900;
     font-size: 2.37rem;
@@ -29,15 +24,6 @@ p{
     margin: 0 0 10px;
     font-size: 1rem;
     line-height: 1.93rem;
-}
-pre {
-    padding: 9.5px;
-    margin: 0 0 10px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: #F5F5F5;
-    border: 1px solid #CCC;
-    border-radius: 4px;
 }
 code {
     padding: 0;
@@ -75,17 +61,9 @@ dd {
     font-family: sans-serif;
 }
 
-/*User Story #2*/
 .main-section {
     padding-left: 20px;
-}
-.video-wrapper {
-    position: relative;
-    padding-bottom: 45%;
-    height: 0;
-    width: 80%;
-    display: block;
-    margin: auto;
+    padding-right: 20px;
 }
 .video {
     position: absolute;
@@ -94,43 +72,110 @@ dd {
     width: 100%;
     height: 100%;
 }
-.wrapper {
-    display: flex;
-    height: 100%;
-}
-.outer {
-    overflow-y: auto;
-}
-.sublist {
-    list-style-type: disc !important;
-    margin-left: 30px;
-}
 
-/*User Story #1*/
-#main-doc {
-    overflow: hidden;
-    height: 100vh;
-}
 #title {
     background-color: #0D47A1;
     color: white;
-}
-
-/*User Story #8*/
-#nav-bar{
-    flex: 1 0 15%;
-    overflow-y: auto;
 }
 #nav-bar ul {
     list-style: none;
     padding-left: 0;
     margin-top: 0;
 }
-#nav-bar header {
-    font-size: 1.75rem;
+
+@media (max-width: 815px) {
+    body {
+        overflow-x: hidden;
+        margin: 0px;
+        font-family: sans-serif;
+    }
+    pre {
+        padding: 9.5px;
+        margin: 0 0 10px;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #F5F5F5;
+        border: 1px solid #CCC;
+        border-radius: 4px;
+        overflow-x: auto;
+    }
+
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    #nav-bar {
+        width: 100%;
+        height: 207px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    #nav-bar li {
+        border: 1px solid;
+        margin: 0;
+        width: 100%;
+    }
+    #nav-bar header {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    #nav-bar a {
+        display: block;
+        padding: 10px 30px;
+        color: black;
+    }
 }
 
-/*User Story #15*/
-@media only screen and(max-width: 815px){
+@media (min-width: 816px) {
+    body {
+        overflow: hidden;
+        margin: 0px;
+        font-family: sans-serif;
+    }
+    pre {
+        padding: 9.5px;
+        margin: 0 0 10px;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #F5F5F5;
+        border: 1px solid #CCC;
+        border-radius: 4px;
+    }
 
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 45%;
+        height: 0;
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .wrapper {
+        display: flex;
+        height: 100%;
+    }
+    .outer {
+        overflow-y: auto;
+    }
+    .sublist {
+        list-style-type: disc !important;
+        margin-left: 30px;
+    }
+    
+    #main-doc {
+        overflow: hidden;
+        height: 100vh;
+    }
+    #nav-bar{
+        flex: 1 0 15%;
+        overflow-y: auto;
+    }
+    #nav-bar header {
+        font-size: 1.75rem;
+    }
 }
