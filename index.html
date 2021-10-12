@@ -3,6 +3,8 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Python for Everybody, Lesson 3: Variables, Expressions and Statements</title>
     </head>
     <body>
         <main id="main-doc">
@@ -12,6 +14,7 @@
                     <ul>
                         <li><a class="nav-link" href="#Introduction">Introduction</a></li>
                         <li><a class="nav-link" href="#Variables,_expressions,_and_statements">Variables, expressions, and statements</a></li>
+                        <li>    
                             <ul class="sublist">
                                 <li><a href="#Values_and_types">Values and types</a></li>
                                 <li><a href="#Variables">Variables</a></li>
@@ -29,14 +32,18 @@
                                 <li><a href="#Glossary">Glossary</a></li>
                                 <li><a href="#Excercises">Excercises</a></li>
                             </ul>
+                        </li>
                         <li><a class="nav-link" href="#Video_Lectures">Video Lectures</a></li>
+                        <li>
                             <ul class="sublist">
                                 <li><a href="#PY4E_-_Introduction_(Chapter_2_Part_1)">PY4E - Introduction (Chapter 2 Part 1)</a></li>
                                 <li><a href="#PY4E_-_Introduction_(Chapter_2_Part_2)">PY4E - Introduction (Chapter 2 Part 2)</a></li>
                                 <li><a href="#Worked_Exercise_2.2">Worked Exercise 2.2</a></li>
                                 <li><a href="#Worked_Exercise_2.3">Worked Exercise 2.3</a></li>
                             </ul>
+                        </li>
                         <li><a class="nav-link" href="#Code">Code</a></li>
+                        <li>
                             <ul class="sublist">
                                 <li><a href="#Lesson_3:_Variables,_Expressions_and_Statements_Code">Lesson 3: Variables, Expressions and Statements Code</a></li>
                                 <li><a href="#PY4E_-_Introduction_(Chapter_2_Part_1)_Code">PY4E - Introduction (Chapter 2 Part 1) Code</a></li>
@@ -44,6 +51,7 @@
                                 <li><a href="#Worked_Exercise_2.2_Code">Worked Exercise 2.2 Code</a></li>
                                 <li><a href="#Worked_Exercise_2.3_Code">Worked Exercise 2.2 Code</a></li>
                             </ul>
+                        </li>
                         <li><a class="nav-link" href="#Definitions">Definitions</a></li>
                     </ul>
                 </nav>
@@ -91,7 +99,7 @@
                             </li>
                             <li>
                                 <a href="https://www.py4e.com/lectures3/Pythonlearn-02-Expressions.pptx" target="_blank">
-                                    Python for Everybody Lesson 3 Slides
+                                    Python for Everybody Lesson 3 PowerPoint Slides Download
                                 </a>
                             </li>
                         </ul>
@@ -134,13 +142,13 @@
                         </p>
                         <pre><code>python<br>>> print(4)<br>4</code></pre>
                         <p>If you are not sure what type a value has, the interpreter can tell you.</p>
-                        <pre><code>>>> type('Hello, World!')<br>&ltclass 'str'><br>>>> type(17)<br>&ltclass 'int'></code></pre>
+                        <pre><code>>>> type('Hello, World!')<br>&lt;class 'str'><br>>>> type(17)<br>&lt;class 'int'></code></pre>
                         <p>
                             Not surprisingly, strings belong to the type <code>str</code> and integers belong to the type <code>int</code>. Less obviously,
                             numbers with a decimal point belong to a type called <code>float</code>, because these numbers are represented
                             in a format called <em>floating point</em>.
                         </p>
-                        <pre><code>>>> type('17')<br>&ltclass 'str'><br>>> type('3.2')<br>&ltclass 'str'></code></pre>
+                        <pre><code>>>> type('17')<br>&lt;class 'str'><br>>> type('3.2')<br>&lt;class 'str'></code></pre>
                         <p>They’re strings.</p>
                         <p>
                             When you type a large integer, you might be tempted to use commas between groups of three digits, as in 1,000,000. This is not a legal integer
@@ -161,7 +169,7 @@
                         <p>To display the value of a variable, you can use a print statement:</p>
                         <pre><code>>>> print(n)<br>17<br>>>> print(pi)<br>3.141592653589793</code></pre>
                         <p>The type of a variable is the type of the value it refers to.</p>
-                        <pre><code>>>> type(message)<br>&ltclass 'str'><br>>>> type(n)<br>&ltclass 'int'><br>>>> type(pi)<br>&ltclass 'float'></code></pre>
+                        <pre><code>>>> type(message)<br>&lt;class 'str'><br>>>> type(n)<br>&lt;class 'int'><br>>>> type(pi)<br>&lt;class 'float'></code></pre>
     
                         <h2 id="Variable_names_and_keywords">Variable names and keywords</h2>
                         <p>Programmers generally choose names for their variables that are meaningful and document what the variable is used for.</p>
@@ -333,7 +341,7 @@
                         <p>At this point, the syntax error you are most likely to make is an illegal variable name, like <code>class</code> and <code>yield</code>, which are keywords, or <code>odd~job</code> and US$, which contain illegal characters.</p>
                         <p>If you put a space in a variable name, Python thinks it is two operands without an operator:</p>
                         <pre><code>>>> bad name = 5<br>SyntaxError: invalid syntax</code></pre>
-                        <pre><code>>>> month = 09<br>    File "<stdin>", line 1<br>      month = 09<br>               ^<br>  SyntaxError: invalid token</code></pre>
+                        <pre><code>>>> month = 09<br>    File "&lt;stdin>", line 1<br>      month = 09<br>               ^<br>  SyntaxError: invalid token</code></pre>
                         <p>For syntax errors, the error messages don’t help much. The most common messages are <code>SyntaxError: invalid syntax</code> and <code>SyntaxError: invalid token</code>, neither of which is very informative.</p>
                         <p>The runtime error you are most likely to make is a “use before def;” that is, trying to use a variable before you have assigned a value. This can happen if you spell a variable name wrong:</p>
                         <pre><code>>>> principal = 327.68<br>>>> interest = principle * rate<br>NameError: name 'principle' is not defined</code></pre>
@@ -418,7 +426,6 @@
                                 height="315" 
                                 src="https://www.youtube.com/embed/7KHdV6FSpo8" 
                                 title="YouTube video player" 
-                                frameborder="0" 
                                 allow="accelerometer; 
                                     autoplay; 
                                     clipboard-write; 
@@ -522,7 +529,6 @@
                                 height="315" 
                                 src="https://www.youtube.com/embed/kefrGMAglGs" 
                                 title="YouTube video player" 
-                                frameborder="0" 
                                 allow="accelerometer; 
                                     autoplay; 
                                     clipboard-write; 
@@ -688,7 +694,6 @@
                                 height="315" 
                                 src="https://www.youtube.com/embed/_b-nVJrl02M" 
                                 title="YouTube video player" 
-                                frameborder="0" 
                                 allow="accelerometer; 
                                     autoplay; 
                                     clipboard-write; 
@@ -744,7 +749,6 @@
                                 height="315"
                                 src="https://www.youtube.com/embed/DVmspDooG2c" 
                                 title="YouTube video player" 
-                                frameborder="0" 
                                 allow="accelerometer;
                                     autoplay; 
                                     clipboard-write; 
@@ -858,11 +862,11 @@
                         <pre><code>x = 1 + 2 * 3 - 4 / 5 ** 6</code></pre>
                         <pre><code>>>> x = 1 + 2 ** 3 / 4 * 5<br>>>> print(x)<br>11.0<br>>>></code></pre>
                         <pre><code>>>> ddd = 1 + 4<br>>>> print(ddd)<br>5<br>>>> eee = 'hello ' + 'there'<br>>>> print(eee)<br>hello there</code></pre>
-                        <pre><code>>>> ee = 'hello ' + 'there<br>>>> eee = eee + 1<br>Traceback (most recent call last):<br>File "&lt;stdin>", line 1, in<br>&lt;module>TypeErrorL Can't convert<br>'int' object to str implicitly<br>>>> type(eee)<br>&lt;class'str'><br>>>> type('hello')<br>&lt;class'str'><br>>>> type(1)<br>&lt;class'int'><br>>>></stdin></code></pre>
+                        <pre><code>>>> ee = 'hello ' + 'there<br>>>> eee = eee + 1<br>Traceback (most recent call last):<br>File "&lt;stdin>", line 1, in<br>&lt;module>TypeErrorL Can't convert<br>'int' object to str implicitly<br>>>> type(eee)<br>&lt;class'str'><br>>>> type('hello')<br>&lt;class'str'><br>>>> type(1)<br>&lt;class'int'><br>>>>&lt;/stdin></code></pre>
                         <pre><code>>>> xx = 1<br>>>> type (xx)<br>&lt;class 'int'><br>>>> temp = 98.6<br>>>> type(temp)<br>&lt;class'float'><br>>>> type(1)<br>&lt;class 'int'><br>>>> type(1.0)<br>&lt;class'float'><br>>>></code></pre>
                         <pre><code>>>> print(float(99) + 100)<br>199.0<br>>>> i = 42<br>>>> type(i)<br>&lt;class'int'><br>f = float(i)<br>>>> print(f)<br>42.0<br>>>> type(f)<br>&lt;class>'float'><br>>>></code></pre>
                         <pre><code>>>> print(10 / 2)<br>5.0<br>>>> print(9 / 2)<br>4.5<br>>>> print(99 / 100)<br>0.99<br>>>> print(10.0 / 2.0)<br>5.0<br>>>> print(99.0 / 100.0)<br>0.99</code></pre>
-                        <pre><code>>>> sval = '123'<br>>>> type(sval)<br>&lt;class 'str'><br>>>> print(sval + 1)<br>Traceback (most recent call last):<br>File "<stdin>", line 1, in &lt;module><br>TypeError: Can't convert 'int' object<br>to str implicitly<br>>>> ival = int(sval)<br>>>> type(ival)<br>&lt;class 'int'><br>>>> print(ival + 1)<br>124<br>>>> nsv = 'hello bob'<br>>>> niv = int(nsv)<br>Traceback (most recent call last):<br>File "<stdin>", line 1, in &lt;module><br>ValueError: invalid literal for int()<br>with base 10: 'x'</code></pre>
+                        <pre><code>>>> sval = '123'<br>>>> type(sval)<br>&lt;class 'str'><br>>>> print(sval + 1)<br>Traceback (most recent call last):<br>File "&lt;stdin>", line 1, in &lt;module><br>TypeError: Can't convert 'int' object<br>to str implicitly<br>>>> ival = int(sval)<br>>>> type(ival)<br>&lt;class 'int'><br>>>> print(ival + 1)<br>124<br>>>> nsv = 'hello bob'<br>>>> niv = int(nsv)<br>Traceback (most recent call last):<br>File "&lt;stdin&gt;", line 1, in &lt;module><br>ValueError: invalid literal for int()<br>with base 10: 'x'</code></pre>
                         <pre><code>name = input('Who are you? ')<br>print('Welcome', nam)</code></pre>
                         <pre><code>inp = input('Europe floor?')<br>usf = int(inp) + 1<br>print('US floor', usf)</code></pre>
                         <pre><code><br># Get the name of the file and open it<br>name = input('Enter file:')<br>handle = open(name, 'r')<br><br><br># Count word frequency<br>counts = dict()<br>for line in handle:<br>    words = line.split()<br>    for word in words:<br>        counts[word] = counts.get(word, 0) + 1<br><br><br># Find the most common word<br>bigcount = None<br>bigword = None<br>for word, count in counts.items():<br>    if bigcount is None or count > bigcount:<br>        bigword = word<br>        bigcount = count<br><br><br># All done<br>print(bigword, bigcount)</code></pre>
