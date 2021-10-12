@@ -77,7 +77,7 @@ dd {
     background-color: #0D47A1;
     color: white;
 }
-#nav-bar ul {
+#navbar ul {
     list-style: none;
     padding-left: 0;
     margin-top: 0;
@@ -109,22 +109,22 @@ dd {
         margin: auto;
     }
 
-    #nav-bar {
+    #navbar {
         width: 100%;
         height: 207px;
         overflow-y: auto;
         overflow-x: hidden;
     }
-    #nav-bar li {
+    #navbar li {
         border: 1px solid;
         margin: 0;
         width: 100%;
     }
-    #nav-bar header {
+    #navbar header {
         font-size: 1.75rem;
         text-align: center;
     }
-    #nav-bar a {
+    #navbar a {
         display: block;
         padding: 10px 30px;
         color: black;
@@ -171,11 +171,11 @@ dd {
         overflow: hidden;
         height: 100vh;
     }
-    #nav-bar{
+    #navbar{
         flex: 1 0 15%;
         overflow-y: auto;
     }
-    #nav-bar header {
+    #navbar header {
         font-size: 1.75rem;
     }
 }
