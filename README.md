@@ -3,6 +3,7 @@ A simple responsive technical documentation webpage.
 ## Technologies Used
 - HTML5
 - CSS3
+- SASS
 ## Description
 This webpage is apart of a series of projects for the completion of the [FreeCodeCamp Responsive Web Design certification](https://www.freecodecamp.org/learn/responsive-web-design/#responsive-web-design-projects). The purpose of this webpage is to provide technical documentation.
 ### Project Requirements
@@ -27,6 +28,7 @@ The [requirements for this project](https://www.freecodecamp.org/learn/responsiv
 For this project, I decided to base the webpage on Dr Charles Severance's [Python for Everybody](https://www.py4e.com/) course, specifically [Lesson 3: Variables, Expressions and Statements](https://www.py4e.com/lessons/memory).
 My goal was to offer all lesson materials into a single easily navigated webpage that looks similar to the Python for Everybody website theme.
 ### Notes
+- SASS was used to increase simplicity.
 - The HTML and CSS code was validated by the [W3C Markup Validation Service](https://validator.w3.org/) to ensure functionality.
 - Best practices for accessibility was used for this project, additionally the Firefox [Accessibility Inspector](https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector) and the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) was also used to ensure accessibility.
 - In addition to responsiveness for large screens, responsiveness was also provided for smaller screens like smartphones with the use of media queries.
