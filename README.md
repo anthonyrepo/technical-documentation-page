@@ -4,7 +4,7 @@ A simple responsive technical documentation webpage.
 - HTML5
 - CSS3
 ## Description
-This webpage is apart of a series of projects for the completion of the [FreeCodeCamp Responsive Web Design certification](https://www.freecodecamp.org/learn/responsive-web-design/#responsive-web-design-projects).
+This webpage is apart of a series of projects for the completion of the [FreeCodeCamp Responsive Web Design certification](https://www.freecodecamp.org/learn/responsive-web-design/#responsive-web-design-projects). The purpose of this webpage is to provide technical documentation.
 ### Project Requirements
 The [requirements for this project](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page) is as follows:
 > Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
