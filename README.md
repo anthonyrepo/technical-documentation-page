@@ -4,6 +4,8 @@
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![image](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
+https://p4elesson3.netlify.app/
+
 A simple responsive technical documentation webpage.
 
 ![image](https://raw.githubusercontent.com/anthonyrepo/technical-documentation-page/main/img/large-screen.PNG)
@@ -42,6 +44,7 @@ My goal was to offer all lesson materials into a single easily navigated webpage
 - The HTML and CSS code was validated by the [W3C Markup Validation Service](https://validator.w3.org/) to ensure functionality.
 - Best practices for accessibility was used for this project, additionally the Firefox [Accessibility Inspector](https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector) and the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) was also used to ensure accessibility.
 - In addition to responsiveness for large screens, responsiveness was also provided for smaller screens like smartphones with the use of media queries.
+- Deployed using Netlify
 ## Links
 - FreeCodeCamp's Responsive Web Design [certification curriculum](https://www.freecodecamp.org/learn/responsive-web-design/#responsive-web-design-projects)
 - FreeCodeCamp's Build a Technical Documentation Page [Project details](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
